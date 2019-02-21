@@ -51,14 +51,41 @@
 
     console.log("Strings on my own")
 
-    let greeting = "my name is" + " " + firstName + " " + middleName + " " + lastName;
+    let greeting = "My name is" + " " + firstName + " " + middleName + " " + lastName;
 
-    console.log(greeting)
+    console.log(greeting);
     /*
     FYI that this is a comment, too
     but it can be on more then one line
     */
     
+    console.log("We are building functions!");
+    //function to make square numbers 
+    function makeSquare(theNumb) {
+      let squared = theNumb * theNumb;
+      return squared;
+    }
+
+    console.log(makeSquare(3))
+    console.log(makeSquare(87))
+    console.log(makeSquare(Math.random()))
+    console.log(makeSquare(Math.pow(8, 2)))
+
+    //function to build my whole name
+    function makeFullName(firstName, middleName, lastName) {
+
+      let myName = firstName + " " + middleName + " " + lastName;
+      return myName;
+    }
+    console.log(makeFullName ('Morgan' , 'Elaine' , 'Kuehler'));
+    console.log(makeFullName ('Robert' , '"Beto"' , 'O\'Rourke'));
+    console.log(makeFullName ( 'Leah' , 'Jean' , 'Ferguson'));
+    console.log(makeFullName ('Morgan' , 'Elaine' , 'Kuehler').length);
+   
+    let fullNameReturn = makeFullName ('Morgan' , 'Elaine' , 'Kuehler');
+    console.log(fullNameReturn.toUpperCase())
+
+
     </script>
 
 </body>
