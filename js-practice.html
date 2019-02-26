@@ -87,6 +87,64 @@
     console.log(fullNameReturn.length)
     console.log(fullNameReturn.toUpperCase())
 
+// class on tues 02/26
+
+console.log('Making better name function')
+function makeBetterName(firstName,middleName,lastName) {
+
+  if (middleName.length === 1) {
+    middleName = middleName + '.';
+    let fullName = firstName + " " + middleName + " " + lastName;
+    return fullName;
+  }
+  else {
+    let fullName = firstName + " " + middleName + " " + lastName;
+    return fullName;
+  }
+}
+  console.log(makeBetterName('Morgan', 'E', 'Kuehler'));
+  console.log(makeBetterName("Joan", "Marie", "Larkin"));
+  console.log(makeBetterName("Donald", "F", "Trump"));
+
+
+//score function
+
+console.log('Team Scores')
+function makeScore (home,away) {
+  if (home > away) {
+    return 'The home team won!' ;
+  }
+  
+  else if (home === away) {
+    return "The two teams tied." ;
+  }
+
+  else if (home < away) {
+    return 'The away team won!';
+  }
+  
+  else {
+    return error ;
+  }
+}
+
+console.log(makeScore(8,6));
+console.log(makeScore(2,7));
+console.log(makeScore(6,6));
+console.log(makeScore(346,346));
+console.log(makeScore(676,2346));
+console.log(makeScore(23452,546));
+
+
+// 
+
+
+
+
+
+
+
+
 
     </script>
 
